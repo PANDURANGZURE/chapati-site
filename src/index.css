@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+@font-face {
+    font-family: marathi ;
+    src: url(./fonts/marathi.ttf);
+}
+
+@font-face {
+    font-family: base ;
+    src: url(./fonts/base.ttf);
+}
+
+@font-face {
+    font-family: heading ;
+    src: url(./fonts/heading.ttf);
+}
+
+@font-face {
+    font-family: logo ;
+    src: url(./fonts/logo.ttf);
+}
+
+@font-face {
+    font-family: simple ;
+    src: url(./fonts/simple.ttf);
+}
+
+.marathi{
+font-family: marathi;
+}
+
+.base{
+font-family: base;
+}
+
+.logo{
+font-family: logo;
+}
+
+.simple{
+font-family: simple;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
