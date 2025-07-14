@@ -34,7 +34,7 @@ export default function Hero() {
   return (
     <>
     <Header/>
-    <section className="h-screen flex items-center justify-center bg-white px-4">
+    <section className="h-screen flex items-center justify-center bg-[#FEF9F3] px-4">
         
       <h1
         ref={textRef}

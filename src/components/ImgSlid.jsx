@@ -42,7 +42,7 @@ const ImgSlid = () => {
 
   return (
     <div
-      className="overflow-x-auto whitespace-nowrap px-4 py-6 hide-scrollbar pointer-events-none"
+      className="overflow-x-auto whitespace-nowrap px-4 py-6 hide-scrollbar pointer-events-none bg-[#FEF9F3]"
       ref={scrollRef}
     >
       <div className="flex gap-4 w-max">

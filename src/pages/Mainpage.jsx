@@ -58,9 +58,9 @@ export default function Hero() {
 
   return (
     <>
-    <div className='w-screen'>
+    <div className='w-screen bg-[#FEF9F3]'>
     <Header/>
-    <section className=" md:mt-20 mt-10 h-full flex flex-col w-screen items-center justify-center bg-white px-4">
+    <section className=" md:mt-20 mt-10 h-full flex flex-col w-screen items-center justify-center bg-[#FEF9F3] px-4">
         
       <h1
         ref={textRef}

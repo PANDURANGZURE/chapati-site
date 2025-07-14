@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion'
+import br from '../assets/border.png'
 
 function About() {
   return (
     <>
     <motion.div
-      className='h-1/2 w-screen flex flex-col justify-center items-center text-center mx-10 my-20'
+      className='h-1/2  flex flex-col justify-center items-center text-center mx-10 my-20 bg-[#FEF9F3]'
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -22,6 +23,7 @@ function About() {
         </button>
         </Link>
     </motion.div>
+    
     </>
   )
 }
