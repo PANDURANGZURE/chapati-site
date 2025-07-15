@@ -3,6 +3,8 @@ import {Routes , Route , BrowserRouter} from 'react-router-dom'
 import Mainpage from "./pages/Mainpage"
 import About from './pages/About'
 import Order from './pages/Order'
+import Testing from './pages/testing'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +16,7 @@ function App() {
         <Route path='/' element={<Mainpage/>}/>
         <Route path='/Order' element={<Order/>}/>
         <Route path='/About' element={<About/>}/>
+        <Route path='/testing' element={<Testing/>}/>
       </Routes>
       </BrowserRouter>
     </>

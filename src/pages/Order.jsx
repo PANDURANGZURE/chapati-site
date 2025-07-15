@@ -38,14 +38,24 @@ function Order() {
         </div>
 
         <div>
-          <label className="block mb-1">Item :</label>
-          <input
-            type="text"
-            name="item"
-            required
-            className="w-full border rounded-md px-3 py-2"
-          />
-        </div>
+  <label htmlFor="item" className="block mb-1">Item :</label>
+  <select
+    name="item"
+    id="item"
+    className="w-full border rounded-md px-3 py-2"
+    required
+  >
+    <option value="">--Choose an item--</option>
+    <option value="chapati"> Chapati ( गहू )</option>
+    <option value="makka">Makyachi Bhakri (मका)</option>
+    <option value="tandul">Tandulachi Bhakri (तांदूळ)</option>
+    <option value="jowar">Jowarichi Bhakri (ज्वारी)</option>
+    <option value="bajra">Bajrichi Bhakri (बाजरी)</option>
+    <option value="nachni">Nachnichi Bhakri (नाचणी)</option>
+    
+
+  </select>
+</div>
 
         <div>
           <label className="block mb-1">Quantity :</label>
@@ -53,6 +63,7 @@ function Order() {
             type="number"
             name="quantity"
             required
+            min="1"
             className="w-full border rounded-md px-3 py-2"
           />
         </div>
