@@ -52,3 +52,7 @@ font-family: simple;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
 }
+
+label{
+    font-family: base;
+}
