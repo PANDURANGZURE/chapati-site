@@ -60,7 +60,7 @@ const ImgSlid = () => {
   {images.map((image) => (
     <div
       key={image.id}
-      className="flex-none w-32 md:w-80 md:h-[500px] h-48 rounded bg-[#f5ebdf] flex items-center justify-center overflow-hidden p-3 border-2 "
+      className="chettinad-wavy mx-auto flex items-center justify-center border" style={{width: 320, height: 450}}
     >
       <img
         src={image.url}

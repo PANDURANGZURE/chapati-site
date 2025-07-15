@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Link } from 'react-router-dom';
 import SplitType from 'split-type';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -201,12 +202,14 @@ export default function AuthenticDelhi({
           {description}
         </p>
 
+        <Link to='/order'>
         <button
           ref={buttonRef}
-          className="mt-6 px-6 py-3 bg-black text-white font-semibold rounded-md hover:bg-gray-800 transition"
+          className="mt-6 px-6 py-3 cursor-pointer bg-black text-white font-semibold rounded-md hover:bg-gray-800 transition"
         >
           {buttonText}
         </button>
+        </Link>
       </div>
     </section>
     

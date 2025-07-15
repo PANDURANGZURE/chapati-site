@@ -176,13 +176,13 @@ export default function AuthenticDelhi({
       <div className="w-full md:w-1/2 max-w-xl">
         <h2
           ref={headingRef}
-          className="text-5xl md:text-7xl font-extrabold logo leading-tight text-black whitespace-pre-line "
+          className="text-3xl md:text-7xl font-extrabold logo leading-tight text-black whitespace-pre-line "
         >
           {heading}
         </h2>
         <h2
           ref={headingRef2}
-          className="text-5xl md:text-7xl font-extrabold logo leading-tight text-black whitespace-pre-line md:mb-10"
+          className="text-3xl md:text-7xl font-extrabold logo leading-tight text-black whitespace-pre-line md:mb-10"
         >
           {heading2}
         </h2>
