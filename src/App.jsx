@@ -3,7 +3,6 @@ import {Routes , Route , BrowserRouter} from 'react-router-dom'
 import Mainpage from "./pages/Mainpage"
 import About from './pages/About'
 import Order from './pages/Order'
-import Testing from './pages/testing'
 
 
 function App() {
