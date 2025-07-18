@@ -7,12 +7,14 @@ gsap.registerPlugin(ScrollTrigger);
 const ImgSlid = () => {
 
   const images = [
-    { id: 1, url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5vZzrJNYtFCB43NzF-tdxJ_YLtd6WwkSWug&s" },
-    { id: 2, url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5vZzrJNYtFCB43NzF-tdxJ_YLtd6WwkSWug&s" },
-    { id: 3, url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5vZzrJNYtFCB43NzF-tdxJ_YLtd6WwkSWug&s" },
-    { id: 4, url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5vZzrJNYtFCB43NzF-tdxJ_YLtd6WwkSWug&s" },
-    { id: 5, url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5vZzrJNYtFCB43NzF-tdxJ_YLtd6WwkSWug&s" },
-    { id: 6, url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5vZzrJNYtFCB43NzF-tdxJ_YLtd6WwkSWug&s" },
+    { id: 1, url: "https://github.com/PANDURANGZURE/chapati-site/blob/main/src/assets/1.jpg?raw=true" },
+    { id: 2, url: "https://github.com/PANDURANGZURE/chapati-site/blob/main/src/assets/7.jpg?raw=true" },
+    { id: 3, url: "https://github.com/PANDURANGZURE/chapati-site/blob/main/src/assets/8.jpg?raw=true" },
+    { id: 4, url: "https://github.com/PANDURANGZURE/chapati-site/blob/main/src/assets/4.jpg?raw=true" },
+    { id: 5, url: "https://github.com/PANDURANGZURE/chapati-site/blob/main/src/assets/5.jpg?raw=true" },
+    { id: 6, url: "https://github.com/PANDURANGZURE/chapati-site/blob/main/src/assets/6.jpg?raw=true" },
+   
+  
   ];
 
   
