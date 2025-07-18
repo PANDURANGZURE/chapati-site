@@ -1,8 +1,11 @@
 import React from 'react'
+import Location from '../components/Location'
 
 function About() {
   return (
-    <div>About</div>
+    <>
+    <Location/>
+    </>
   )
 }
 
