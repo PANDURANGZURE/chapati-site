@@ -7,7 +7,7 @@ function About() {
   return (
     <>
     <motion.div
-      className='h-1/2  flex flex-col justify-center items-center text-center mx-10 my-20 bg-[#FEF9F3]'
+      className='h-1/2  flex flex-col justify-center items-center text-center mx-10 my-20 bg-[#F4EADE]'
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -19,13 +19,15 @@ function About() {
           
           className=" cursor-pointer mt-6 px-6 py-3 bg-black text-white font-semibold rounded-md hover:bg-gray-800 transition"
         >
-          Buy now
+          About Us
         </button>
         </Link>
     </motion.div>
     <svg viewBox="0 0 2000 80" width="100%" height="80" preserveAspectRatio="none" style={{ display: 'block' }}>
       <path
-        fill="#F4EADF"
+        // fill="#F4EADF"
+        
+        fill="#FF5101"
         d="
           M0,0
           A40,30 0 0,0 80,0

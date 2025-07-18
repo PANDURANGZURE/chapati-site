@@ -155,7 +155,7 @@ export default function AuthenticDelhi({
   return (
     <div className=''>
         
-        <section className="bg-[#f7ecdf] py-16 px-6 md:px-20 flex  flex-col md:flex-row-reverse items-center justify-center gap-12">
+        <section className="bg-[#FF5101] py-16 px-6 md:px-20 flex  flex-col md:flex-row-reverse items-center justify-center gap-12">
       {/* Image Section */}
       <div className="flex justify-center items-center md:min-h-screen">
   <div ref={imageRef} className="relative   max-w-md">
@@ -176,13 +176,13 @@ export default function AuthenticDelhi({
       <div className="w-full md:w-1/2 max-w-xl">
         <h2
           ref={headingRef}
-          className="text-5xl md:text-7xl font-extrabold logo leading-tight text-black whitespace-pre-line "
+          className="text-5xl md:text-7xl font-extrabold logo leading-tight text-[#f4f437] whitespace-pre-line "
         >
           {heading}
         </h2>
         <h2
           ref={headingRef2}
-          className="text-5xl md:text-7xl font-extrabold logo leading-tight text-black whitespace-pre-line md:mb-10"
+          className="text-5xl md:text-7xl font-extrabold logo leading-tight text-[#f4f437] whitespace-pre-line md:mb-10"
         >
           {heading2}
         </h2>
@@ -190,14 +190,14 @@ export default function AuthenticDelhi({
 
         <p
           ref={hindiRef}
-          className=" marathi text-xl mt-3 font-medium md:text-3xl text-black md:mb-7"
+          className=" marathi text-xl mt-3 font-medium md:text-3xl text-[#f4f437] md:mb-7"
         >
           {hindiTagline}
         </p>
 
         <p
           ref={descRef}
-          className="mt-4 text-base md:text-lg base text-black leading-relaxed md:mb-7"
+          className="mt-4 text-base md:text-lg base text-[#f4f437] leading-relaxed md:mb-7"
         >
           {description}
         </p>
