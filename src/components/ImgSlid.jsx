@@ -1,18 +1,25 @@
 import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import One from '../assets/1.jpg';
+import Two from '../assets/2.jpg';
+import Three from '../assets/3.jpg';
+import Four from '../assets/4.jpg';
+import Five from '../assets/5.jpg';
+import Six from '../assets/6.jpg';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ImgSlid = () => {
 
   const images = [
-    { id: 1, url: "https://github.com/PANDURANGZURE/chapati-site/blob/main/src/assets/1.jpg?raw=true" },
-    { id: 2, url: "https://github.com/PANDURANGZURE/chapati-site/blob/main/src/assets/7.jpg?raw=true" },
-    { id: 3, url: "https://github.com/PANDURANGZURE/chapati-site/blob/main/src/assets/8.jpg?raw=true" },
-    { id: 4, url: "https://github.com/PANDURANGZURE/chapati-site/blob/main/src/assets/4.jpg?raw=true" },
-    { id: 5, url: "https://github.com/PANDURANGZURE/chapati-site/blob/main/src/assets/5.jpg?raw=true" },
-    { id: 6, url: "https://github.com/PANDURANGZURE/chapati-site/blob/main/src/assets/6.jpg?raw=true" },
+    { id: 1, url: One },
+    { id: 2, url: Two },
+    { id: 3, url: Three },
+    { id: 4, url: Four  },
+    { id: 5, url: Five },
+    { id: 6, url: Six },
    
   
   ];
