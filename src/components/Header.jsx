@@ -3,6 +3,7 @@ import logo from "../assets/logo.png"
 import { FaCartShopping } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -15,8 +16,8 @@ function Header() {
             <div className="bg-[#F4EADE] w-full md:h-20 h-16 shadow-2xl flex justify-end items-center md:pr-10"> 
              {/* Desktop row */}
              <div className='hidden md:flex gap-5'>
-              <p className='text-lg base'>About Us</p>
-              <FaCartShopping className='text-4xl'/>
+              <Link to='/about'><p className='text-lg base'>About Us</p></Link>
+              <Link to='/order'><FaCartShopping className='text-2xl'/></Link>
              </div>
              {/* Mobile hamburger */}
              <button className="md:hidden text-3xl mr-4" onClick={() => setSidebarOpen(true)}>
