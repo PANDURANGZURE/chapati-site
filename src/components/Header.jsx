@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import logo from "../assets/logo.png"
 import { FaCartShopping } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Header() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -22,34 +23,58 @@ function Header() {
                <FaBars />
              </button>
             </div>
-            {/* Mobile sidebar */}
+            {/* Mobile sidebar with motion animation */}
+            <AnimatePresence>
             {sidebarOpen && (
-              <div className="fixed inset-0 bg-black bg-opacity-40 z-50 flex">
-                <div className="bg-[#F4EADE] w-64 h-full p-6 flex flex-col gap-6 shadow-xl animate-slidein">
-                  <button className="self-end text-2xl mb-4" onClick={() => setSidebarOpen(false)}>&times;</button>
-                  <p className='text-lg base'>About Us</p>
-                  <div className='flex gap-2'>
+              <motion.div 
+                className="fixed inset-0  backdrop-blur-xl opacity-20 grayscale-25 shadow-md  z-50 flex"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setSidebarOpen(false)}
+              >
+                <motion.div
+                  className="bg-[#F4EADE] w-64 h-full p-6 flex flex-col gap-6 shadow-xl"
+                  initial={{ x: -300 }}
+                  animate={{ x: 0 }}
+                  exit={{ x: -300 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                  onClick={e => e.stopPropagation()}
+                >
+                  <motion.button 
+                    className="self-end text-2xl mb-4" 
+                    onClick={() => setSidebarOpen(false)}
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ delay: 0.1 }}
+                  >&times;</motion.button>
+                  <motion.p 
+                    className='text-lg base'
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 20 }}
+                    transition={{ delay: 0.2 }}
+                  >About Us</motion.p>
+                  <motion.div 
+                    className='flex gap-2'
+                    initial={{ opacity: 0, y: 40 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 40 }}
+                    transition={{ delay: 0.3 }}
+                  >
                     <FaCartShopping className='text-4xl'/><p className='text-lg base'>Shop now</p>
-                  </div>
-                </div>
-                <div className="flex-1" onClick={() => setSidebarOpen(false)}></div>
-              </div>
+                  </motion.div>
+                </motion.div>
+                <div className="flex-1" />
+              </motion.div>
             )}
+            </AnimatePresence>
             <div className="w-0 h-0 border-l-[150px] border-l-transparent 
             border-t-[30px] border-t-[#F4EADE]
             border-r-[150px] border-r-transparent
             "></div>
             </div>
-            {/* Add slidein animation */}
-            <style>{`
-              @keyframes slidein {
-                from { transform: translateX(-100%); }
-                to { transform: translateX(0); }
-              }
-              .animate-slidein {
-                animation: slidein 0.3s ease-out;
-              }
-            `}</style>
     </>
   )
 }
