@@ -20,7 +20,7 @@ function Header() {
              </div>
              {/* Mobile hamburger */}
              <button className="md:hidden text-3xl mr-4" onClick={() => setSidebarOpen(true)}>
-               <FaBars />
+               <FaBars className='text-2xl' />
              </button>
             </div>
             {/* Mobile sidebar with motion animation */}
