@@ -58,7 +58,7 @@ export default function Hero() {
 
   return (
     <>
-    <div className='w-screen bg-[#F4EADE]'>
+    <div className='w-screen bg-[#F4EADE] '>
     <Header/>
     <section className=" md:mt-20 mt-10 h-full flex flex-col w-screen items-center justify-center bg-[#F4EADE] px-4">
         
