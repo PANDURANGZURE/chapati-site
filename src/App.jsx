@@ -1,4 +1,5 @@
 import { useState , useEffect } from 'react'
+import { Helmet } from 'react-helmet';
 import Lenis from "@studio-freight/lenis";
 import {Routes , Route , BrowserRouter} from 'react-router-dom'
 import Mainpage from "./pages/Mainpage"

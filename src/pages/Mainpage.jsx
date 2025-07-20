@@ -73,7 +73,7 @@ export default function Hero() {
       <p ref={pRef} className='mt-5 md:text-3xl marathi leading-relaxed'>मुस्कुराये आप मेरी दिल्ली में हैं</p>
     </section>
 
-    <ImgSlid/>
+    {/* <ImgSlid/> */}
     <About/>
     
     <Item
