@@ -70,18 +70,18 @@ export default function Hero() {
     <Header/>
     <section className=" md:mt-20 mt-10 h-full flex flex-col w-screen items-center justify-center bg-[#F4EADE] px-4">
         
-      <h1
+      <h2
         ref={textRef}
         className="text-4xl md:text-8xl logo  overflow-hidden text-center leading-tight"
       >
         GET READY TO BE <br />
         TRANSPORTED TO THE <br />
         STREETS OF DELHI
-      </h1>
+      </h2>
       <p ref={pRef} className='mt-5 md:text-3xl marathi leading-relaxed'>मुस्कुराये आप मेरी दिल्ली में हैं</p>
     </section>
 
-    {/* <ImgSlid/> */}
+    <ImgSlid/>
     <About/>
     
     <Item
