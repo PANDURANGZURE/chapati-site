@@ -8,6 +8,7 @@ import Item2 from '../components/Items';
 import Slide from '../components/Slide';
 import ImgSlid from '../components/ImgSlid';
 import About from '../components/About'
+import Footer from '../components/Footer';
 
 // Remove duplicate registration - it's already done in Item.jsx
 // gsap.registerPlugin(ScrollTrigger);
@@ -58,7 +59,7 @@ export default function Hero() {
 
   return (
     <>
-    <div className='w-screen bg-[#F4EADE] '>
+    <div className='w-screen bg-[#F4EADE]  '>
     <Header/>
     <section className=" md:mt-20 mt-10 h-full flex flex-col w-screen items-center justify-center bg-[#F4EADE] px-4">
         
@@ -147,6 +148,11 @@ export default function Hero() {
 
 <Slide/>
 
+<div className='h-20 bg-[#FF5101]'>
+
+</div>
+
+<Footer/>
 
 
 
