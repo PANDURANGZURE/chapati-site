@@ -60,7 +60,7 @@ export default function Slide() {
             ref={cursorRef}
             className="fixed top-0 left-0 z-40 pointer-events-none transform -translate-x-1/2 -translate-y-1/2"
           >
-            <div className="bg-transparent backdrop-blur-sm p-2   text-black border border-[#ff5101] rounded-full w-24 h-24 flex text-center items-center justify-center text-sm font-bold">
+            <div className="bg-transparent backdrop-blur-sm  text-white border border-[#ff5101] rounded-full w-24 h-24 flex text-center items-center justify-center text-sm font-bold">
               ORDER NOW
             </div>
           </div>
