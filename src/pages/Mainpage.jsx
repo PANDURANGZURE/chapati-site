@@ -8,7 +8,7 @@ import Item from '../components/Item';
 import Item2 from '../components/Items';
 import Slide from '../components/Slide';
 import ImgSlid from '../components/ImgSlid';
-import About from '../components/About';
+import About from '../components/About'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -66,47 +66,105 @@ export default function Hero() {
 
   return (
     <>
-      <div className="w-screen bg-[#F4EADE]">
-        <Header />
-        <section className="md:mt-20 mt-10 h-full flex flex-col w-screen items-center justify-center bg-[#F4EADE] px-4">
-          <h2
-            ref={textRef}
-            className="text-4xl md:text-8xl text-black logo text-center leading-tight"
-          >
-            GET READY TO BE <br />
-            TRANSPORTED TO THE <br />
-            STREETS OF DELHI
-          </h2>
-          <p
-            ref={pRef}
-            className="mt-5 md:text-3xl marathi leading-relaxed text-black"
-          >
-            मुस्कुराये आप मेरी दिल्ली में हैं
-          </p>
-        </section>
+    <div className='w-screen bg-[#F4EADE] '>
+    <Header/>
+    <section className=" md:mt-20 mt-10 h-full flex flex-col w-screen items-center justify-center bg-[#F4EADE] px-4">
+        
+      <h1
+        ref={textRef}
+        className="text-4xl md:text-8xl logo  overflow-hidden text-center leading-tight"
+      >
+        GET READY TO BE <br />
+        TRANSPORTED TO THE <br />
+        STREETS OF DELHI
+      </h1>
+      <p ref={pRef} className='mt-5 md:text-3xl marathi leading-relaxed'>मुस्कुराये आप मेरी दिल्ली में हैं</p>
+    </section>
 
-        <ImgSlid />
-        <About />
+    {/* <ImgSlid/> */}
+    <About/>
+    
+    <Item
+     image="https://cdn.prod.website-files.com/6549128db41d15ae06784cbc/6644ab9937bf50fdaa8c99fa_Butter%20Chicken-p-2000.webp" // or imported image
+     altText="Butter Chicken"
+     heading={`Authentically`}
+     heading2={`Delhi`}
+     hindiTagline="शुद्धता की गारंटी"
+     description="Dive into the vibrant world of authentic Indian flavours, skillfully prepared by our Delhi-born chefs and served with a sprinkle of pride for your culinary delight!"
+     buttonText="Buy Now"
+    />
 
-        {/* Repeating content */}
-        <Item
-          image="https://cdn.prod.website-files.com/6549128db41d15ae06784cbc/6644ab9937bf50fdaa8c99fa_Butter%20Chicken-p-2000.webp"
-          altText="Butter Chicken"
-          hindiTagline="शुद्धता की गारंटी"
-          description="Dive into the vibrant world of authentic Indian flavours, skillfully prepared by our Delhi-born chefs and served with a sprinkle of pride for your culinary delight!"
-          buttonText="Buy Now"
-        />
-        <Slide />
-        <Item2
-          image="https://cdn.prod.website-files.com/6549128db41d15ae06784cbc/6644ab9937bf50fdaa8c99fa_Butter%20Chicken-p-2000.webp"
-          altText="Butter Chicken"
-          hindiTagline="शुद्धता की गारंटी"
-          description="Dive into the vibrant world of authentic Indian flavours, skillfully prepared by our Delhi-born chefs and served with a sprinkle of pride for your culinary delight!"
-          buttonText="Buy Now"
-        />
-        <Slide />
-        {/* Add more Items/Slides as needed */}
-      </div>
+    <Slide/>
+
+<Item2
+     image="https://cdn.prod.website-files.com/6549128db41d15ae06784cbc/6644ab9937bf50fdaa8c99fa_Butter%20Chicken-p-2000.webp" // or imported image
+     altText="Butter Chicken"
+     heading={`Authentically\nDelhi`} // allows line breaks
+     hindiTagline="शुद्धता की गारंटी"
+     description="Dive into the vibrant world of authentic Indian flavours, skillfully prepared by our Delhi-born chefs and served with a sprinkle of pride for your culinary delight!"
+     buttonText="Buy Now"
+    />
+
+<Slide/>
+
+<Item
+     image="https://cdn.prod.website-files.com/6549128db41d15ae06784cbc/6644ab9937bf50fdaa8c99fa_Butter%20Chicken-p-2000.webp" // or imported image
+     altText="Butter Chicken"
+     heading={`Authentically`}
+     heading2={`Delhi`}
+     hindiTagline="शुद्धता की गारंटी"
+     description="Dive into the vibrant world of authentic Indian flavours, skillfully prepared by our Delhi-born chefs and served with a sprinkle of pride for your culinary delight!"
+     buttonText="Buy Now"
+    />
+
+<Slide/>
+
+<Item2
+     image="https://cdn.prod.website-files.com/6549128db41d15ae06784cbc/6644ab9937bf50fdaa8c99fa_Butter%20Chicken-p-2000.webp" // or imported image
+     altText="Butter Chicken"
+     heading={`Authentically`}
+     heading2={`Delhi`}
+     hindiTagline="शुद्धता की गारंटी"
+     description="Dive into the vibrant world of authentic Indian flavours, skillfully prepared by our Delhi-born chefs and served with a sprinkle of pride for your culinary delight!"
+     buttonText="Buy Now"
+    />
+
+<Slide/>
+
+<Item
+     image="https://cdn.prod.website-files.com/6549128db41d15ae06784cbc/6644ab9937bf50fdaa8c99fa_Butter%20Chicken-p-2000.webp" // or imported image
+     altText="Butter Chicken"
+     heading={`Authentically`}
+     heading2={`Delhi`}
+     hindiTagline="शुद्धता की गारंटी"
+     description="Dive into the vibrant world of authentic Indian flavours, skillfully prepared by our Delhi-born chefs and served with a sprinkle of pride for your culinary delight!"
+     buttonText="Buy Now"
+    />
+
+<Slide/>
+
+<Item2
+     image="https://cdn.prod.website-files.com/6549128db41d15ae06784cbc/6644ab9937bf50fdaa8c99fa_Butter%20Chicken-p-2000.webp" // or imported image
+     altText="Butter Chicken"
+     heading={`Authentically`}
+     heading2={`Delhi`}
+     hindiTagline="शुद्धता की गारंटी"
+     description="Dive into the vibrant world of authentic Indian flavours, skillfully prepared by our Delhi-born chefs and served with a sprinkle of pride for your culinary delight!"
+     buttonText="Buy Now"
+    />
+
+<Slide/>
+
+
+
+
+
+
+
+
+    
+
+    </div>
     </>
   );
 }
