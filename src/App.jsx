@@ -6,7 +6,6 @@ import Mainpage from "./pages/Mainpage"
 import ScrollToTop from './components/ScrollToTop';
 import About from './pages/About'
 import Order from './pages/Order'
-import Home from './pages/Home';
 
 
 function App() {
