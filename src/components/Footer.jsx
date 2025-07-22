@@ -4,7 +4,40 @@ import Location from "./Location";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FF5101] text-white py-10 px-6 md:px-20">
+    <>
+    <div className='w-full h-40 overflow-hidden bg-[#FF5101]'>
+      <svg viewBox="0 0 2000 80" width="100%" height="100%" preserveAspectRatio="none" className="block w-full h-full" >
+      <path
+        fill="#F4E8DA"
+        d="
+          M0,0
+          A100,40 0 0,0 100,0
+          A100,40 0 0,0 200,0
+          A100,40 0 0,0 300,0
+          A100,40 0 0,0 400,0
+          A100,40 0 0,0 500,0
+          A100,40 0 0,0 600,0
+          A100,40 0 0,0 700,0
+          A100,40 0 0,0 800,0
+          A100,40 0 0,0 900,0
+          A100,40 0 0,0 1000,0
+          A100,40 0 0,0 1100,0
+          A100,40 0 0,0 1200,0
+          A100,40 0 0,0 1300,0
+          A100,40 0 0,0 1400,0
+          A100,40 0 0,0 1500,0
+          A100,40 0 0,0 1600,0
+          A100,40 0 0,0 1700,0
+          A100,40 0 0,0 1800,0
+          A100,40 0 0,0 1900,0
+          A100,40 0 0,0 2000,0
+          L2000,80 L0,80 Z
+        "
+      />
+    </svg>
+    </div>
+    
+    <footer className="bg-[#F4E8DA] text-black py-10 px-6 md:px-20">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Section - Image Placeholder */}
         <div className="relative   max-w-md">
@@ -36,13 +69,13 @@ export default function Footer() {
           <p className="mb-4 text-base md:text-xl base"><a href="tel:+918888162425" className="hover:underline">+91 8888162425</a></p>
 
           {/* Rights */}
-          <p className="text-sm text-white/80">
+          <p className="text-sm text-black/80">
             Rasoi ghar pune is an trademark comes under   
-            <span className="text-white"> ©Pratiksha Enterprises</span>
+            <span className="text-black"> ©Pratiksha Enterprises</span>
           </p>
-          <p className="text-sm text-white/80">
+          <p className="text-sm text-black/80">
             All Rights Reserved By  
-            <span className="text-white"> ©Pratiksha Enterprises</span>
+            <span className="text-black"> ©Pratiksha Enterprises</span>
           </p>
         </div>
       </div>
@@ -62,5 +95,6 @@ export default function Footer() {
         </svg>
       </div>
     </footer>
+    </>
   );
 }

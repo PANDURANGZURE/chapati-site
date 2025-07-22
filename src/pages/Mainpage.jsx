@@ -156,7 +156,7 @@ export default function Hero() {
 
 <Slide/>
 
-<div className='h-20'>
+<div className='h-20 bg-[#FF5101]'>
 
 </div>
 <Footer/>
