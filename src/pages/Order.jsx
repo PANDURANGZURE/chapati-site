@@ -26,7 +26,7 @@ function Order() {
     <Header/>
     <div className="min-h-screen w-screen bg-[#f7eddf] flex flex-col items-center justify-center px-4 py-6">
       
-      <h1 className="text-4xl logo font-extrabold text-black">Order Here</h1>
+      <h2 className="text-4xl logo font-extrabold text-black">Order Here</h2>
       <p className="text-lg mb-6 marat">ऑर्डर करा</p>
 
       <form
