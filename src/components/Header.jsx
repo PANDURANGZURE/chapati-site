@@ -10,9 +10,13 @@ function Header() {
   return (
     <>
      <div className="flex justify-center items-center flex-col sticky top-0 z-50  " >
+            
             <div className='absolute md:-top-8   '>
-              <img className='md:h-40 h-32 mr-2' src={logo} alt="" />
+              <Link to='/'><img className='md:h-40 h-32 mr-2' src={logo} alt="" /></Link>
+              
+               
             </div>
+           
             <div className="bg-[#F4EADE] w-full md:h-20 h-16 shadow-2xl flex justify-end items-center md:pr-10"> 
              {/* Desktop row */}
              <div className='hidden md:flex gap-5'>
