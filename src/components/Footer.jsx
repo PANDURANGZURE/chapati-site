@@ -7,10 +7,11 @@ export default function Footer() {
     <footer className="bg-[#FF5101] text-white py-10 px-6 md:px-20">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Section - Image Placeholder */}
-        <div className="relative w-full md:h-[700px] border-8 border-black shadow-lg rounded-sm bg-neutral-100">
-            <iframe
+        <div className="relative   max-w-md">
+          <div className="absolute -top-4 -left-4 w-full h-full bg-black z-0 "></div>
+          <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.506204938493!2d73.89913017523864!3d18.596287982511953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c7e96de8f927%3A0x2397e5be26a571c6!2sSaurav%20Zure!5e0!3m2!1sen!2sin!4v1752822084323!5m2!1sen!2sin"
-        className="absolute top-0 left-0 w-full h-full border-0"
+        className="relative z-10 w-full bg-[#F4E8DA]  md:h-[600px] h-auto border-2 border-black "
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
@@ -19,25 +20,29 @@ export default function Footer() {
         </div>
         {/* Right Section - Content */}
         <div className="text-left">
-          <h2 className="text-4xl md:text-5xl font-bold mb-2">Our Location</h2>
-          <p className="text-xl mb-2">आमचा पत्ता</p>
-          <p className="mb-4">Dhanori, Pune 15, Maharastra India</p>
+          <h2 className="mb-2 text-5xl md:text-7xl font-extrabold logo leading-tight">Our Location</h2>
+          <p className="marathi text-xl mt-3 font-medium md:text-3xl mb-6">आमचा पत्ता</p>
+          <p className="mb-6 mt-4  ">Dhanori, Pune 15, Maharastra India</p>
 
           {/* Icons */}
           <div className="flex space-x-4 mb-4 text-lg">
-            <FaEnvelope />
-            <FaPhoneAlt />
-            <FaInstagram />
+            <a href="#"><FaEnvelope  className="text-2xl" /></a>
+            <a href="#"><FaPhoneAlt  className="text-2xl"/></a>
+            <a href="#"><FaInstagram className="text-2xl"/></a>
           </div>
 
           {/* Contact Info */}
-          <p className="mb-1">+91 8888162425</p>
-          <p className="mb-4">+91 8888162425</p>
+          <p className="mb-1 text-base md:text-xl base"><a href="tel:+918888162425" className="hover:underline">+91 8888162425</a></p>
+          <p className="mb-4 text-base md:text-xl base"><a href="tel:+918888162425" className="hover:underline">+91 8888162425</a></p>
 
           {/* Rights */}
           <p className="text-sm text-white/80">
-            All Rights Reserved By <br />
-            <span className="text-white">©Pratiksha Enterprises</span>
+            Rasoi ghar pune is an trademark comes under   
+            <span className="text-white"> ©Pratiksha Enterprises</span>
+          </p>
+          <p className="text-sm text-white/80">
+            All Rights Reserved By  
+            <span className="text-white"> ©Pratiksha Enterprises</span>
           </p>
         </div>
       </div>

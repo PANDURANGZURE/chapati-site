@@ -173,7 +173,7 @@ export default function AuthenticDelhi({
 
 
       {/* Text Section */}
-      <div className="w-full md:w-1/2 max-w-xl">
+      <div className="w-full md:w-1/2 max-w-xl ">
         <h2
           ref={headingRef}
           className="text-5xl md:text-7xl font-extrabold logo leading-tight text-[#f4f437] whitespace-pre-line "
