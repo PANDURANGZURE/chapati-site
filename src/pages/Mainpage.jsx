@@ -10,6 +10,7 @@ import Slide from '../components/Slide';
 import ImgSlid from '../components/ImgSlid';
 import About from '../components/About'
 import Footer from '../components/Footer'
+import { Helmet } from "react-helmet-async";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -67,6 +68,26 @@ export default function Hero() {
 
   return (
     <>
+    <Helmet>
+        <title>Rasoi Ghar Pune | Fresh Homemade Chapati & Bhakri Delivery</title>
+        <meta
+          name="description"
+          content="Rasoi Ghar Pune offers fresh, homemade chapati and bhakri delivered to your doorstep. Order online wheat roti, jowar bhakri, and bajra bhakri in Pune. Perfect for tiffins, families, and bulk catering."
+        />
+        <meta
+            name="keywords"
+            content="Rasoi Ghar Pune, chapati delivery Pune, bhakri online, buy chapati online Pune, homemade roti, tiffin roti Pune, soft chapati Pune, jowar bhakri delivery, bajra bhakri Pune, roti near me, bhakri shop in Pune, daily chapati service, bulk roti orders Pune, roti home delivery service, online roti booking, healthy chapati Pune, homemade food Pune, roti tiffin service Pune"
+          />
+        <meta property="og:title" content="Rasoi Ghar Pune – Order Fresh Chapati & Bhakri Online" />
+        <meta
+          property="og:description"
+          content="Order soft, homemade chapatis and bhakris from Rasoi Ghar Pune. Perfect for daily meals, tiffins, or events. Wheat, jowar, and bajra rotis available."
+        />
+        <meta property="og:url" content="https://rasoighar-pune.netlify.app/" />
+        <meta property="og:image" content="https://rasoighar-pune.netlify.app/cover.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://rasoighar-pune.netlify.app/" />
+      </Helmet>
     <div className='w-screen bg-[#F4EADE] '>
     <Header/>
     <section className=" md:mt-20 mt-10 h-full flex flex-col w-screen items-center justify-center bg-[#F4EADE] px-4">
@@ -82,7 +103,7 @@ export default function Hero() {
       <p ref={pRef} className='mt-5 md:text-3xl marathi leading-relaxed'>मुस्कुराये आप मेरी दिल्ली में हैं</p>
     </section>
 
-    <ImgSlid/>
+    {/* <ImgSlid/> */}
     <About/>
     
     <Item
