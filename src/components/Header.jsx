@@ -54,6 +54,7 @@ function Header() {
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ delay: 0.1 }}
                   >&times;</motion.button>
+                  <Link to='/about'>
                   <motion.p 
                     className='text-lg base'
                     initial={{ opacity: 0, y: 20 }}
@@ -61,6 +62,9 @@ function Header() {
                     exit={{ opacity: 0, y: 20 }}
                     transition={{ delay: 0.2 }}
                   >About Us</motion.p>
+                  </Link>
+                  <Link to='/order'>
+                  
                   <motion.div 
                     className='flex gap-2'
                     initial={{ opacity: 0, y: 40 }}
@@ -69,7 +73,7 @@ function Header() {
                     transition={{ delay: 0.3 }}
                   >
                     <FaCartShopping className='text-4xl'/><p className='text-lg base'>Shop now</p>
-                  </motion.div>
+                  </motion.div></Link>
                 </motion.div>
                 <div className="flex-1" />
               </motion.div>
