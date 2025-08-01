@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import Header from '../components/Header'
+import { Button } from '@/components/ui/button';
+import SlideButton from '@/components/ui/slide-button';
+import ImageRipple from '@/components/ui/image-ripple'
 
 function Order() {
   // Price map for each item
@@ -112,8 +115,12 @@ function Order() {
       <p className="text-center mt-6 text-sm text-gray-800 max-w-md">
         Welcome to My Delhi, the home of Delhi-cious Indian street food. Our fun, vibrant, and eclectic restaurant serves up authen
       </p>
+
+      {/* <SlideButton/>
+      <ImageRipple/> */}
     </div>
     </div>
+    
     </>
   )
 }
